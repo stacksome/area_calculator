@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectangle</title>
+  <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-slate-300 flex justify-center items-center h-screen">
+  <div class="bg-slate-500 flex justify-center items-center h-[300px] w-[400px] m-[2rem] shadow-2xl shadow-black flex-col rounded-2xl">
+    <form class="flex flex-col justify-center items-center">
+
+      <div class="mb-[1rem]">
+        <p class="text-slate-300">Height</p>
+        <input id="height" type="text" class="bg-slate-300 p-[0.5rem] rounded-xl">
+        <select id="height-unit" class="hover:border-2 hover:border-slate-300 cursor-pointer p-[0.5rem] rounded-xl">
+          <option>cm</option>
+          <option>m</option>
+        </select>
+      </div>
+
+      <div class="mb-[1rem]">
+        <p class="text-slate-300">Length</p>
+        <input id="length" type="text" class="bg-slate-300 p-[0.5rem] rounded-xl">
+        <select id="length-unit" class="hover:border-2 hover:border-slate-300 cursor-pointer p-[0.5rem] rounded-xl">
+          <option>cm</option>
+          <option>m</option>
+        </select>
+      </div>
+
+      <button id="submit-btn" class="bg-slate-300 mb-[1rem] w-fit p-[0.5rem] px-[2rem] rounded-xl hover:bg-slate-700 hover:text-white">Submit</button>
+    </form>
+    <b class="result hidden text-slate-950">Area of Rectangle is 0</b>
+  </div>
+
+  <script src="rectangle.js"></script>
+</body>
+</html>

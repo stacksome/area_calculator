@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triangle</title>
+  <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-amber-100 justify-center flex items-center h-screen">
+  <div class="bg-amber-600 flex justify-center items-center h-[300px] flex-col w-[400px] m-[2rem] shadow-2xl shadow-black rounded-2xl">
+    <form class="flex flex-col justify-center items-center">
+      <div class="mb-[1rem]">
+        <p class="text-amber-100">Height</p>
+
+        <input id="height" type="text" class="bg-amber-100 p-[0.5rem] rounded-xl">
+
+        <select id="height-unit" class="hover:border-2 hover:border-amber-100 cursor-pointer p-[0.5rem] rounded-xl">
+          <option value="cm">cm</option>
+          <option value="m">m</option>
+        </select>
+      </div>
+
+
+      <div class="mb-[1rem]">
+        <p class="text-amber-100">Base</p>
+    
+        <input id="base" type="text"class="bg-amber-100 p-[0.5rem] rounded-xl ">
+
+        <select id="base-unit" class=" hover:border-2 cursor-pointer hover:border-amber-100 p-[0.5rem] rounded-xl">
+          <option value="cm">cm</option>
+          <option value="m">m</option>
+        </select>
+      </div>
+      
+      <button id="submit-btn" class="hover:bg-amber-900 cursor-pointer duration-200 hover:border-none hover:text-white mb-[1rem] w-fit bg-amber-100 p-[0.5rem] px-[2rem] rounded-xl">Submit</button>
+    </form>
+
+    <b class="result hidden text-amber-950">Area of Triangle is 0</b>
+  </div>
+
+  <script src="triangle.js"></script>
+</body>
+</html>

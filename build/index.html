@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2-D Shape Area Calculater</title>
+  <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-blue-50 transition-all duration-200 flex flex-col min-h-screen">
+  <header>
+    <nav>
+      <div class="bg-blue-500 font-bold flex justify-center items-center w-screen h-[5rem] mb-[5rem]">
+        <h1 class="text-3xl text-blue-50 ml-[2%]">2-D Shape Area Calculater</h1>
+      
+        <div class = "flex justify-center items-center ml-auto mr-[3%]">
+          <p>Mode: </p>
+          <label class="relative inline-block w-12 h-6">
+              <input type="checkbox" class="hidden peer">
+              <span class="absolute inset-0 bg-gray-400 rounded-full transition peer-checked:bg-gray-800"></span>
+              <span class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition peer-checked:translate-x-6"></span>
+          </label>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="w-full flex flex-col">
+
+    <div class="triangle bg-amber-50 mt-0 ml-[5%] h-fit p-1.5 w-[70%] shadow-2xl shadow-amber-800 rounded-2xl">
+      <h1 class="font-bold text-4xl p-4 ">Triangle</h1>
+      <p class="text-3xl p-2">A triangle is a polygon with three corners and three sides, one of the basic shapes in geometry. The corners, also called vertices, are zero-dimensional points while the sides connecting them, also called edges, are one-dimensional line segments.</p>
+      <a href="triangle.html"><button  class= "bg-amber-500 text-black p-3 w-[8rem] hover:bg-amber-900 duration-200 hover:text-white cursor-pointer rounded-2xl m-4">Triangle</button></a>
+    </div>
+
+    <div class="rectangle bg-slate-50 w-[70%] mt-[5rem] mr-[5%] mx-auto h-fit p-1.5 shadow-2xl shadow-slate-800 rounded-2xl">
+      <h1 class="font-bold text-4xl p-4">Rectangle</h1>
+      <p class="text-3xl p-2">In geometry, a rectangle is a rectilinear convex polygon or a quadrilateral with four right angles. It can also be defined as: an equiangular quadrilateral, since equiangular means that all of its angles are equal; or a parallelogram containing a right angle.</p>
+      <a href="rectangle.html"><button  class= "bg-slate-500 text-black p-3 w-[8rem] hover:bg-slate-900 duration-200 hover:text-white cursor-pointer rounded-2xl m-4">Rectangle</button></a>
+    </div>
+   
+    <div class="square bg-violet-50 mt-[5rem] ml-[5%] h-fit p-1.5 w-[70%] shadow-2xl shadow-violet-800 rounded-2xl">
+      <h1 class="font-bold text-4xl p-4">Square</h1>
+      <p class="text-3xl p-2">In geometry, a square is a regular quadrilateral, which means that it has four straight sides of equal length and four equal angles. Squares are special cases of rectangles, which have four equal angles, and of rhombuses, which have four equal sides.</p>
+      <a href="square.html"><button  class= "bg-violet-500 text-black p-3 w-[8rem] hover:bg-violet-900 duration-200 hover:text-white cursor-pointer rounded-2xl m-4">Square</button></a>
+    </div>
+
+    <div class="circle bg-emerald-50 mt-[5rem] mr-[5%] mx-auto mb-[10rem] h-fit p-1.5 w-[70%] shadow-2xl shadow-emerald-800 rounded-2xl">
+      <h1 class="font-bold text-4xl p-4">Circle</h1>
+      <p class="text-3xl p-2">A circle is a shape consisting of all points in a plane that are at a given distance from a given point, the centre. The distance between any point of the circle and the centre is called the radius. The length of a line segment connecting two points on the circle and passing through the centre is called the diameter.</p>
+      <a href="circle.html"><button  class= "bg-emerald-500 text-black p-3 w-[8rem] hover:bg-emerald-900 duration-200 hover:text-white cursor-pointer rounded-2xl m-4">Circle</button></a>
+    </div>
+  </div>
+  
+  
+  <!-- <footer class="text-gray-600 body-font bg-gray-100">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center order-first">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONTACT US</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800 cursor-pointer" id="email">Email</a>
+              <p class="gMail hidden text-gray-600 hover:text-gray-800">gujjarsakshik867@gmail.com</p>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Phone</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Address</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">ABOUT US</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">About Us</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">HELP</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Terms of Service</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Customer Support</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Contact Us</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">FEEDBACK</h2>
+          <div class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+            <div class="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+              <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+            <button class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded">Send</button>
+          </div>
+          <p class="text-gray-500 text-sm mt-2 md:text-left text-center">We would appreciate your feedback
+            <br class="lg:block hidden">and suggestions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+        
+        <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2025 Area Calculater —
+          <a href="https://x.com/GujjKsh" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@GujjKsh</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-500" href="https://www.facebook.com/saksham.gujjar.94/">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="https://x.com/GujjKsh">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="https://www.instagram.com/_saksham_gujjar_/">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/saksham-gujjar-232756296/">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>

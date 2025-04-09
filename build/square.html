@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square</title>
+  <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-violet-200 justify-center flex items-center h-screen">
+  <div class="bg-violet-400 justify-center flex flex-col items-center h-[300px] w-[400px] m-[2rem] shadow-2xl shadow-black rounded-2xl">
+    <form class="flex flex-col justify-center items-center">
+      <div class="mb-[1rem]">
+        <p class="text-violet-200">Side</p>
+
+        <input id="side" type="text" class="bg-violet-200 p-[0.5rem] rounded-xl">
+
+        <select id="side-unit" class="hover:border-2 hover:border-violet-200 cursor-pointer p-[0.5rem] rounded-xl">
+          <option>cm</option>
+          <option>m</option>
+        </select>
+      </div>
+    </form>
+    <button id="submit-btn" class="bg-violet-200 cursor-pointer duration-200 hover:border-none hover:bg-violet-700 hover:text-white mb-[1rem] p-[0.5rem] px-[2rem] w-fit rounded-xl">Submit</button>
+
+    <b class="result hidden text-voulet-900">Area of Square is 0</b>
+  </div>
+
+  <script src="square.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle</title>
+  <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-emerald-200 justify-center items-center flex h-screen">
+  <div class="bg-emerald-500 justify-center flex items-center flex-col h-[300px] w-[400px] shadow-2xl shadow-black m-[2rem] rounded-2xl">
+    <form class="flex flex-col justify-center items-center">
+      <div class="mb-[0.5rem]">
+        <p class="text-emerald-200">Radius</p>
+        <input id="radius" type="text" class="bg-emerald-200 p-[0.5rem] mb-[0.5rem] rounded-xl">
+        <select id="radius-unit" class="p-[0.5rem] hover:border-2 hover:border-emerald-200 cursor-pointer rounded-xl">
+          <option>cm</option>
+          <option>m</option>
+        </select>
+      </div>
+    </form>
+    <button id="submit-btn" class="bg-emerald-200 cursor-pointer hover:bg-emerald-900 hover:text-white hover:border-none duration-200 mb-[1rem] p-[0.5rem] px-[2rem] w-fit rounded-xl">Submit</button>
+    <b class="result hidden text-emerald-950">Area of Square is 0</b>
+  </div>
+
+  <script src="circle.js"></script>
+</body>
+</html>
